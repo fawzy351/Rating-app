@@ -1,0 +1,128 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --p-size: 15px;
+    --fw-400: 400;
+    --fw-700: 700;
+    --margin-67: 20px;
+    --tran-time: .5s
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    padding: 0 20px;
+}
+.page .container{
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: var(--Dark-Blue);
+}
+.container > div{
+    min-width: 100%;
+    position: relative;
+    left: 0;
+    transition: left var(--tran-time);
+}
+.move{
+    left: -380px;
+}
+.container .rate .image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--Dark-Blue);
+    box-shadow: 0 0 3px var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    color: var(--White);
+    font-size: 28px;
+}
+.container p{
+    color: var(--Light-Grey);
+    font-size: 15px;
+    margin-bottom: var(--margin-67);
+}
+.container .rate ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--margin-67);
+}
+.container .rate ul li{
+    width: 43px;
+    height: 43px;
+    font-size: 15px;
+    background-color: var(--Dark-Blue);
+    color: var(--Light-Grey);
+    box-shadow: 0 0 3px var(--Very-Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: var(--tran-time);
+    cursor: pointer;
+}
+.container .rate ul li:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.checked{
+    background-color: var(--Light-Grey) !important;
+    color: var(--White) !important;
+}
+.container .rate button{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: var(--tran-time);
+    cursor: pointer;
+}
+.container .rate button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.container .thank{
+    text-align: center;
+}
+.container .thank .your-rate{
+    width: fit-content;
+    margin: 10px auto 0;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 13px;
+    background-color: var(--Dark-Blue);
+    box-shadow: 0 0 3px var(--Very-Dark-Blue);
+    color: var(--Orange);
+}
