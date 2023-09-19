@@ -16,8 +16,8 @@ lis.forEach(function(e,no,list){
 })
 button.onclick = function(){
     // move boxes 
-    rate.style.left = '-380px'
-    thank.style.left = '-380px'
+    rate.style.left = 'calc(-100% - 20px)'
+    thank.style.left = 'calc(-100% - 20px)'
     // get data 
     let checkEle = 0;
     lis.forEach(element => {

@@ -45,9 +45,6 @@ ul{
     left: 0;
     transition: left var(--tran-time);
 }
-.move{
-    left: -380px;
-}
 .container .rate .image{
     width: 40px;
     height: 40px;
